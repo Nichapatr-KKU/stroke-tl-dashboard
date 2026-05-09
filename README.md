@@ -23,7 +23,7 @@ npm run dev
 npm run build
 ```
 
-The build outputs a GitHub Pages-ready `dist/` directory with an explicit `<base href="/stroke-tl-dashboard/">`, a `.nojekyll` marker, and a `404.html` fallback for the `/stroke-tl-dashboard/` repository path. The explicit base path keeps assets resolving correctly from both the repository root and GitHub Pages fallback routes.
+The build outputs a GitHub Pages-ready `dist/` directory with an explicit `<base href="/stroke-tl-dashboard/">`, a stylesheet linked from `src/styles.css`, a `.nojekyll` marker, and a `404.html` fallback for the `/stroke-tl-dashboard/` repository path. The explicit base path keeps assets resolving correctly from both the repository root and GitHub Pages fallback routes.
 
 ## Preview the GitHub Pages path locally
 
@@ -33,3 +33,8 @@ npm run preview:pages
 ```
 
 Open `http://localhost:4173/stroke-tl-dashboard/`. The dev server strips `/stroke-tl-dashboard` before reading files so this local URL mirrors the production GitHub Pages path.
+
+
+## GitHub Pages deployment
+
+Pushing to `main` runs the GitHub Actions workflow in `.github/workflows/deploy-pages.yml`, builds `dist/`, and deploys the dashboard to `https://nichapatr-kku.github.io/stroke-tl-dashboard/`.
