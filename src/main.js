@@ -1,7 +1,6 @@
 import React from 'https://esm.sh/react@19.2.0';
 import { createRoot } from 'https://esm.sh/react-dom@19.2.0/client';
 import htm from 'https://esm.sh/htm@3.1.1';
-import './styles.css';
 
 const html = htm.bind(React.createElement);
 
