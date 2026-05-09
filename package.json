@@ -1,0 +1,15 @@
+{
+  "name": "stroke-tl-dashboard",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/dev-server.mjs dist 4173",
+    "preview:pages": "node scripts/dev-server.mjs dist 4173 /stroke-tl-dashboard"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "homepage": "https://nichapatr-kku.github.io/stroke-tl-dashboard"
+}
