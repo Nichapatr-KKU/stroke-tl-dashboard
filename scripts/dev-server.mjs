@@ -4,7 +4,7 @@ import { extname, join, normalize } from 'node:path';
 
 const root = process.argv[2] || '.';
 const port = Number(process.argv[3] || process.env.PORT || 5173);
-const basePath = normalizeBasePath(process.argv[4] || process.env.BASE_PATH || '/');
+const basePath = normalizeBasePath(process.argv[4] || process.env.BASE_PATH || '/stroke-tl-dashboard');
 const types = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
